@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a=2,b=3,op;
+    printf("enter the operation");
+    scanf("%d",&op);
+    switch(op)
+    {
+    case 1:printf("the sum is %d",a+b);
+    break;
+    case 2:printf("the difference is %d",a-b);
+    break;
+    case 3:printf("the multiplication  is %d",a*b);
+    break;
+    case 4:printf("the division is %d",a%b);
+    break;
+    }
+}
