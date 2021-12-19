@@ -1,0 +1,32 @@
+//wap for sum of individuals of given number
+
+#include <stdio.h>
+int main()
+{    
+int a=123,rem,sum=0;
+
+while(a!=0)
+{
+    rem=a%10;
+    a=a/10;
+    sum=sum+rem;
+}
+printf("sum  is %d",sum);
+} 
+ 
+//wap to reverse a given number
+#include <stdio.h>
+int main()
+{    
+int a=123,rem,sum=0;
+
+while(a!=0)
+{
+    rem=a%10;
+   
+    sum=sum*10+rem;
+     a=a/10;
+}
+printf("sum  is %d",sum);
+} 
+   

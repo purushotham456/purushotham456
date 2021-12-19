@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+ int a=5,b=10;
+printf("bitwise AND is %d\n",a&b);
+printf("bitwise OR is %d\n",a|b);
+printf("bitwise XOR is %d\n",a^b);
+printf("bitwise NOT is %d\n",a~b);
+printf("left shift is %d\n",a<<b);
+printf("right shift is %d\n",a>>b);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+90

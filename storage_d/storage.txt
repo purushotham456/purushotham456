@@ -1,0 +1,28 @@
+//storage  classes
+
+Storage Class      declaration                      storage          intial value               scope                           lifetime
+
+	           	                             	     	                                 	                       
+auto	          Inside a function/block	      memory         Unpredictable	     Within the function/block	      Within the function/block  
+          
+
+
+register         Inside a function/block	    CPU Registers	    Garbage	      Within the function/block            Within the function/block
+
+
+
+
+extern	         Outside all functions	                Memory	          Zero	              Entire the file and other files        program runtime
+                                                                                                 where the variable is 
+
+                                                                                                  declared as extern
+                                                                                             
+
+Static (local)	Inside a function/block	                  Memory	      Zero	   Within the function/block	           program runtime
+  
+
+
+
+
+  
+Static (global)	  Outside all functions	                Memory	          zero                    Global	                     program runtime
