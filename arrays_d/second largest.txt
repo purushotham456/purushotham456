@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<limits.h>
+
+int main() 
+{
+    int a[5]={10,20,15,5,100},l1,l2,i;
+    l1=INT_MIN;
+    l2=INT_MIN;
+    for(i=0;i<5;i++)
+    {
+        if(a[i]>l1)
+        {
+        
+            l2=l1;
+            l1=a[i];
+        }
+       else if(a[i]<l1 && a[i]>l2)
+       {
+           l2=a[i];
+       }
+    }
+    printf("largest number is %d\n",l1);
+    printf("second largest number is %d",l2); 
+   return 0; 
+}
