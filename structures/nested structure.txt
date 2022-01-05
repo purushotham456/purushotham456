@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+struct address
+{
+   char door[13];
+   int pin;
+   char phone[20];
+};
+struct emp
+{
+    int id;
+    char name[20];
+    struct address add;
+}det;
+void main()
+{
+    
+    struct emp det={452,"chinna","1-256",532440,"9550195843"};
+    printf("employee details\n");
+    printf("%d %s %s  %d  %s",det.id,det.name,det.add.door,det.add.pin,det.add.phone);
+  }

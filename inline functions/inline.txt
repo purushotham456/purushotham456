@@ -1,0 +1,26 @@
+Inline functions provide following advantages:
+1) Function call overhead doesn’t occur.
+2) It also saves the overhead of push/pop variables on the stack when function is called.
+3) It also saves overhead of a return call from a function.
+4) Inline function may be useful (if it is small) for embedded systems because inline can yield less code than the function call preamble and return.
+
+Inline function disadvantages:
+1) If you use too many inline functions then the size of the binary executable file will be large, because of the duplication of same code.
+
+2) Too much inlining can also reduce your instruction cache hit rate, thus reducing the speed of instruction fetch from that of cache memory to that of primary memory.
+3) Inline functions may not be useful for many embedded systems. Because in embedded systems code size is more important than speed.
+
+
+
+
+#include <iostream>
+using namespace std;
+inline int cube(int s)
+{
+    return s*s*s;
+}
+int main()
+{
+    cout << "The cube of 3 is: " << cube(3) << "\n";
+    return 0;
+}
