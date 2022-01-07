@@ -1,0 +1,27 @@
+Copy constructor:
+A copy constructor is a member function which initializes an object using another object of the same class
+
+
+
+#include <iostream> 
+using namespace std; 
+class ABC  
+{  
+  public: int x;  
+    ABC (int a)
+    {   
+      x=a;
+    }  
+    ABC (ABC &i)
+    {   
+      x = i.x;  
+    } 
+}; 
+  
+int main ()  
+{  
+  ABC a1(40);  
+  ABC a2(a1); 
+  cout<<a2.x;  
+  return 0;  
+}
